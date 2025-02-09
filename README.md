@@ -74,6 +74,7 @@ Once the Gradio interface is running, open the link provided in your terminal (e
 
 * Enter an English sentence in the input field.
 * The translation to Hindi will appear in the output field.
+![image](https://github.com/user-attachments/assets/c969dace-9281-4794-b499-3daa72ccefc7)
 
 ### 📌 Technologies Used
 
