@@ -1,109 +1,102 @@
-Language Translator AI
+# Language Translator AI
 
+📌 **Project Overview**
 
+The Language Translator AI is a deep learning-based translation system designed to convert text from English to Hindi using the pre-trained Helsinki-NLP *opus-mt-en-hi* transformer model. The project features a **Gradio UI** that allows users to interact with the model for English-to-Hindi translations.
 
+🚀 **Features**
 
+- **English-to-Hindi Translation:** Converts input text from English to Hindi with high accuracy.
+- **Pre-trained Transformer Model:** Uses the Helsinki-NLP *opus-mt-en-hi* model.
+- **Gradio UI:** A simple interface for translating text without needing to write code.
 
-📌 Project Overview
+📂 **Project Structure**
 
-The Language Translator AI is a deep learning-based translation system designed to convert text from English to Hindi. It leverages state-of-the-art Natural Language Processing (NLP) techniques, including sequence-to-sequence (Seq2Seq) models and Transformer architectures, to provide accurate and context-aware translations.
-
-🚀 Features
-
-English-to-Hindi Translation: Converts input text from English to Hindi with high accuracy.
-
-Deep Learning-Based Model: Uses Seq2Seq and Transformer architectures.
-
-Preprocessing Pipeline: Cleans and tokenizes text for better translation quality.
-
-Evaluation Metrics: BLEU score and accuracy metrics to assess performance.
-
-Scalable Implementation: Can be extended to support additional languages.
-
-📂 Project Structure
-
+```plaintext
 Language_Translator-AI/
-│── data/                 # Dataset for training and testing
-│── models/               # Trained model files
-│── notebooks/            # Jupyter notebooks for training and evaluation
-│── src/                  # Source code for data processing, training, and inference
-│── README.md             # Project documentation
-│── requirements.txt      # Dependencies and libraries
-│── train.py              # Model training script
-│── inference.py          # Script for generating translations
+│── Eng-Hindi_Translator.ipynb       # Jupyter Notebook for translation
+│── requirements.txt                 # Project dependencies
+│── README.md                        # Project documentation
 
-🔧 Installation
+```
 
-1. Clone the Repository
+## 🔧 Installation Instructions
 
+To get started with the project, follow these steps:
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+```
 git clone https://github.com/NivethaRajamani/Language_Translator-AI.git
 cd Language_Translator-AI
+```
 
-2. Create a Virtual Environment (Optional)
+### 2. Install Required Dependencies
+This project requires several Python libraries.
 
-python -m venv env
-source env/bin/activate   # For Linux/macOS
-env\Scripts\activate      # For Windows
+Install them using the following command:
 
-3. Install Dependencies
-
+```
 pip install -r requirements.txt
+```
+or 
 
-🏋️ Training the Model
+Alternatively, you can install the libraries manually:
 
-To train the model on the dataset, run:
+```
+pip install transformers torch gradio datasets sacrebleu
+```
 
-python train.py
+### 3. Check Python Version
 
-This script preprocesses the data, trains the Seq2Seq or Transformer model, and saves the trained model.
+Make sure you're using Python 3.6 or above:
 
-📝 Running Inference
+```
+python --version
+```
 
-To translate English text into Hindi using the trained model, execute:
 
-python inference.py --text "Hello, how are you?"
+### 📝 Running the Translation Notebook
 
-📊 Evaluation
+#### 1. Open the Jupyter Notebook
+Once the repository is set up and dependencies are installed, launch Jupyter Notebook:
 
-To evaluate the model’s performance using BLEU score:
+Navigate to Eng-Hindi_Translator.ipynb in the Jupyter Notebook interface.
 
-python evaluate.py
+Open the notebook.
 
-📌 Technologies Used
+#### 2. Run the Notebook Cells
+Execute all the cells in the notebook. The Gradio interface will be launched at the end of the notebook.
 
-Python
+#### 3. Using the Gradio Interface
+Once the Gradio interface is running, open the link provided in your terminal (e.g., http://127.0.0.1:7860/) in your browser.
 
-TensorFlow / PyTorch
+* Enter an English sentence in the input field.
+* The translation to Hindi will appear in the output field.
 
-Seq2Seq Model
+### 📌 Technologies Used
 
-Transformer Model
+* Python: The primary programming language for the project.
+* Hugging Face Transformers: For leveraging pre-trained transformer models.
+* Pre-trained Helsinki-NLP Model (opus-mt-en-hi): A neural machine translation model trained for English-to-Hindi translation.
+* Gradio: A library to build the interactive web interface.
+* TensorFlow (TF): Used for training the translation model.
+* PyTorch: Framework used by the Hugging Face model for deep learning.
+* Datasets: For loading and processing datasets.
 
-NLTK / SpaCy for text preprocessing
+### 📂 Dataset
+The model uses the IITB English-Hindi dataset for training and evaluation.
 
-🔥 Future Enhancements
-
-Add support for additional languages.
-
-Improve model accuracy using larger datasets.
-
-Deploy the model as a web or mobile application.
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a pull request.
+### 🤝 Contributing
+Contributions are welcome! If you'd like to improve the project, feel free to fork the repository, create a new branch, and submit a pull request.
 
 📜 License
-
 This project is licensed under the MIT License.
 
 📞 Contact
-
 For any questions or suggestions, feel free to reach out:
 
-Author: Nivetha Rajamani
-
-Email: nivetharajamani.jobs@gmail.com
-
-GitHub: NivethaRajamani
-
+* Author: Nivetha Rajamani
+* Email: nivetharajamani.jobs@gmail.com
+* GitHub: NivethaRajamani
